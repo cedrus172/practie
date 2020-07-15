@@ -29,6 +29,10 @@ drawFace = function(var sizePoint, var colorPoint, var speedPoint){
       ellipse(x + 50, 240, 120, 136);
 
       eyeSize-= speedPoint;
+      if(eyeSize <= 0)
+        {
+          eyeSize = 40 + sizePoint;
+        }
 };
 drawFace1 = function(var sizePoint, var colorPoint, var speedPoint){
    // face
@@ -45,6 +49,10 @@ drawFace1 = function(var sizePoint, var colorPoint, var speedPoint){
       ellipse(x + 50 + 350, 240, 120, 136);
 
       eyeSize-= speedPoint;
+      if(eyeSize <= 0)
+            {
+              eyeSize = 30 + sizePoint;
+            }
 };
 drawFace2 = function(var sizePoint, var colorPoint, var speedPoint){
    // face
@@ -59,6 +67,9 @@ drawFace2 = function(var sizePoint, var colorPoint, var speedPoint){
       // mouth
       fill(colorPoint, colorPoint, 65);
       ellipse(x + 50 + 700, 240, 120, 136);
-
       eyeSize-= speedPoint;
+      if(eyeSize <= 0)
+         {
+          eyeSize = 25 + sizePoint;
+         }
 };
